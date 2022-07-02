@@ -1,11 +1,10 @@
-const submitBook = document.querySelector(".btn-submit");
 const addBook = document.querySelector(".btn-add-book");
 const grid = document.querySelector(".grid");
 const modal = document.querySelector(".modal");
+const form = document.querySelector(".form");
 
     let id = -1;
     
-submitBook.addEventListener("click", addBookToLibrary);
 addBook.addEventListener("click", function() {
     modal.style.display = "block";
     document.querySelector(".formposition").style.display = "block"
@@ -103,6 +102,10 @@ function addBookToLibrary() {
 
         
 }
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    addBookToLibrary();
+});
 window.onclick = function(e) {
     if (e.target == modal) {
       modal.style.display = "none";

@@ -18,13 +18,13 @@
     <div class="modal">
         <div class="formposition">
             <div class="box">
-                <form action="" class="form">
-                    <input type="text" id="title" placeholder="Title" maxlength="25"> 
-                    <input type="text" id="author" placeholder="Author" maxlength="25">
-                    <input type="text" inputmode="numeric" id="pages" placeholder="Pages" maxlength="5">
+                <form class="form" id="myform">
+                    <input type="text" id="title" placeholder="Title" maxlength="25" required> 
+                    <input type="text" id="author" placeholder="Author" maxlength="25" required>
+                    <input type="text" inputmode="numeric" id="pages" placeholder="Pages" maxlength="5" required>
                     <span><label for="check">Have you read it ? <input type="checkbox" id="check"></label></span>
                 </form>
-                <button class="btn-submit">Submit</button>
+                <button form="myform" class="btn-submit">Submit</button>
             </div>
         </div>
     </div>
