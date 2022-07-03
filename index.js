@@ -95,6 +95,7 @@ function addBookToLibrary() {
         let i = myLibrary.findIndex(i => i.id == `${newBook.id}`);
         myLibrary.splice(i, 1);
         grid.removeChild(wrapper);
+
     })
         document.querySelector(".formposition").style.display = "none"
         document.querySelector(".form").reset();    
@@ -102,9 +103,9 @@ function addBookToLibrary() {
 
         
 }
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e, i) => {
     e.preventDefault();
-    addBookToLibrary();
+    addBookToLibrary(i);
 });
 window.onclick = function(e) {
     if (e.target == modal) {

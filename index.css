@@ -6,12 +6,21 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: rgba(177, 170, 170, 0.4);
 }
 header {
     display: flex;
     justify-content: space-around;
     border-bottom: 2px solid #DE5C55;
-    box-shadow: 0 4px 5px rgb(177, 177, 177);
+    box-shadow: 0 4px 5px rgb(177, 177, 177); 
+    background-color: white;
+}
+h1 {
+    font-family: 'Lobster', cursive;
+}
+img {
+    width: 100px;
+    height: 80px;
 }
 .add-button {
     margin: 20px auto;
@@ -115,6 +124,14 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 5px rgb(177, 177, 177);
     font-size: 18px;
+}
+.toggle:hover, .delete-button:hover, .add-button:hover, .btn-submit:hover {
+    transform: scale(1.05);
+}
+input:focus {
+        outline: none !important;
+        border: solid 2px #DE5C55;
+        box-shadow: 0 0 4px #F0986C;
 }
 footer {
     display: flex;
