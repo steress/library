@@ -138,3 +138,14 @@ footer {
     justify-content: center;
     margin-top:auto;
 }
+
+@media (max-width : 820px){
+    .grid {
+        grid-template-columns: repeat(2, minmax(200px, 300px));
+    }
+}
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: minmax(200px, 300px);
+    }
+}
